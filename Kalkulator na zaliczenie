@@ -1,0 +1,60 @@
+#include <cstdlib>
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+char wybor;
+int x;
+int a,b;
+
+cout << "Wybierz pozycje z menu\n";
+cout << "1- Dodawanie\n"
+<< "2- Odejmowanie\n"
+<< "3- Mnozenie\n"
+<< "4- Dzielenie\n";
+cin >> wybor;
+
+
+if(wybor == '1' )
+{
+cout << "Dodawanie\n";
+cout << "Wprowadz pierwsza liczbe: ";
+cin >> a;
+cout << "Wprowadz druga liczbe: ";
+cin >>b;
+
+cout << a << " + " << b << " = " << a+b<< "\n";
+
+} else if(wybor == '2') {
+cout << "Odejmowanie\n";
+cout << "Wprowadz pierwsza liczbe: ";
+cin >> a;
+cout << "Wprowadz druga liczbe: ";
+cin >>b;
+
+cout << a << " - " << b << " = " << a-b<< "\n";
+} else if(wybor == '3') {
+cout << "Mnozenie\n";
+cout << "Wprowadz pierwsza liczbe: ";
+cin >> a;
+cout << "Wprowadz druga liczbe: ";
+cin >>b;
+
+cout << a << " * " << b << " = " << a*b<< "\n";
+} else if(wybor == '4') {
+cout << "Dzielenie\n";
+cout << "Wprowadz pierwsza liczbe: ";
+cin >> a;
+cout << "Wprowadz druga liczbe: ";
+cin >>b;
+
+cout << a << " / " << b << " = " << a/b<< "\n";
+}
+
+
+
+return EXIT_SUCCESS;
+}
